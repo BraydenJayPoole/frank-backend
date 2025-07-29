@@ -2,8 +2,8 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-# We will create this router in the next step
-# from .api.v1.api import api_router
+# Import the main API router we just created
+from .api.v1.api import api_router
 
 # Initialize the FastAPI application
 app = FastAPI(title="Frank API", openapi_url="/api/v1/openapi.json")
@@ -27,5 +27,4 @@ async def health_check():
     return {"status": "ok"}
 
 # Include the main API router. All other routes will be nested under this.
-# app.include_router(api_router, prefix="/api/v1")
-
+app.include_router(api_router, prefix="/api/v1")
