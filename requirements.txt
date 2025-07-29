@@ -1,0 +1,26 @@
+FastAPI framework for building APIs
+fastapi
+
+Uvicorn for running the ASGI server
+uvicorn
+
+Pydantic for data validation
+pydantic
+
+SQLAlchemy for the Object-Relational Mapper (ORM)
+sqlalchemy
+
+Psycopg2 for connecting SQLAlchemy to PostgreSQL
+psycopg2-binary
+
+Celery for background task processing
+celery
+
+Redis for the Celery message broker
+redis
+
+Alembic for database migrations
+alembic
+
+python-dotenv for loading environment variables from .env file
+python-dotenv
